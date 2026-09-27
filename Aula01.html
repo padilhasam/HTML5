@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br>
+	<head>
+		<meta charset="utf-8">
+		<title> NOVAS TAGS HTML5 </title>
+	</head>
+	<body>
+		<header>
+			<time datetime="2026-09-27">27 de setembro de 2026</time>
+		</header>
+		
+		<article>
+			<section>
+				<h1> Título </h1>
+				<p> Conteúdo <strong>gratuito</strong> para a <em>internet</em></p><!-- As tags STRONG e EM substituem as antigas tags b e i -->
+			</section>
+		
+			<section>
+				<!-- LISTAS NÃO ORDENADAS -->
+				<ul>
+					<li>Exemplo 01</li>
+					<li>Exemplo 02</li>
+					<li>Exemplo 03</li>
+				</ul>
+				
+				<!-- LISTAS ORDENADAS -->
+				<ol type="A">
+					<li>Exemplo 01</li>
+					<li>Exemplo 02</li>
+					<li>Exemplo 03</li>
+				</ol>
+				
+				<!-- FORMULÁRIO -->
+				<h2>Fale Conosco</h2>
+				<form action="/enviar.php" method="POST">
+					<fieldset>
+						<legend>Informação Pessoal</legend>
+						
+						<label for="nome">Nome:</label>
+						<input name="nome" type="text" required><br><br>
+						
+						<label for="email">Email:</label>
+						<input name="email" type="email"><br><br>
+						
+						<label for="tel">Telefone:</label>
+						<input name="tel" type="tel" pattern="([0-9]{3})[0-9]{4}-[0-9]{4}"><br><br>
+						
+						<label for="pais">País:</label>
+						<input list="paises" id="pais" name="pais">
+							<datalist id="paises"><!-- Substitui o SELECT, mas não funcionou no firefox -->
+								<option value="Brasil">
+								<option value="Honduras">
+								<option value="México">
+							</datalist><br><br>
+						
+						Editores e Navegadores:
+						<select id="editores">
+							<optgroup label="Editores">
+								<option>Notepad++</option>
+								<option>InteliJ</option>
+								<option>Visual Studio</option>
+							</optgroup>
+							<optgroup label="Navegadores">
+								<option>Chrome</option>
+								<option>Firefox</option>
+								<option>Edge</option>
+							</optgroup>
+						</select><br><br>
+							
+						<label for="cores">Cor:</label>
+						<input type="color" id="cor" name="cor"><br><br>
+						
+						<label for="volume">Nível de Experiência:</label>
+						<input type="range" id="volume" min="0" max="100" value="50"><br><br>
+						
+						<label for="mensagem">Mensagem:</label><br>
+						<textarea id="mensagem" name="mensagem" rows="4" cols="30" resize="none"></textarea><br><br>
+						
+						
+						<button type="submit">Enviar</button>
+					</fieldset>
+				</form>
+			</section><br>
+			
+			<section>
+				<!-- TABELA -->
+				<table border="1">
+					<thead><!-- CABEÇALHO DA TABELA -->
+						<tr> <!-- Cria uma linha na tabela -->
+							<th>ALUNO</th> <!-- th cria uma coluna, mas é usado para títulos, pois tem formatação negrita -->
+							<th>IDADE</th>
+							<th>CURSO</th>
+						</tr>
+					</thead>
+					
+					<tbody><!-- CORPO DA TABELA -->
+						<tr>
+							<td>Jeferson</td>
+							<td>39</td>
+							<td>Engenharia</td>
+						</tr>
+							<td>Renata</td>
+							<td>36</td>
+							<td>Panificação</td>
+						<tr>
+						
+						</tr>
+					</tbody>
+				</table>
+			</section><br>
+			
+			<section>
+				<details>
+					<summary>Clique para ler os termos</summary>
+					<p>Conteúdo longo que estava oculto e agora foi expandido </p>
+				</details>
+			</section>
+			
+			<h2>Recursos Multimídia</h2>
+			<video width="400" controls poster="thumbnails.jpg" preloader="metadata">
+				<source src="video.mp4" type="video/mp4">
+				<source src="video.webm" type="video/webm">
+				
+				<p>Seu navegador não suporta o elemento vídeo.</p>
+			</video>
+			
+			<h2>Podcast</h2>
+			<audio controls>
+				<source src="meu_audio.mp3" type="audio/mpeg">
+				Seu navegador não suporta a tag de áudio.
+			</audio>
+			
+		</article>	
+	</body>
+	
+	<footer>
+		<p>Author: Jeferson Moisés Padilha</p>
+	</footer>
+	
+<html>
+	
