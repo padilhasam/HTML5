@@ -116,19 +116,56 @@
 				</details>
 			</section>
 			
-			<h2>Recursos Multimídia</h2>
-			<video width="400" controls poster="thumbnails.jpg" preloader="metadata">
-				<source src="video.mp4" type="video/mp4">
-				<source src="video.webm" type="video/webm">
+			<section>
+				<h2>Recursos Multimídia</h2>
+				<video width="400" controls poster="thumbnails.jpg" preloader="metadata">
+					<source src="video.mp4" type="video/mp4">
+					<source src="video.webm" type="video/webm">
+					
+					<p>Seu navegador não suporta o elemento vídeo.</p>
+				</video>
 				
-				<p>Seu navegador não suporta o elemento vídeo.</p>
-			</video>
+				<h2>Podcast</h2>
+				<audio controls>
+					<source src="meu_audio.mp3" type="audio/mpeg">
+					Seu navegador não suporta a tag de áudio.
+				</audio><br><br>
+				
+				<h2>Vídeo do Youtube</h2>
+				
+				<iframe src="https://www.youtube.com/embed/VeUiVCb7ZmQ?list=RDVeUiVCb7ZmQ" title="NSYNC - Bye Bye Bye (Music Video) Deadpool &amp; Wolverine Opening Scene Soundtrack MV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" width="560" height="315" allowfullscreen="500px"></iframe><br><br>
+			</section>
 			
-			<h2>Podcast</h2>
-			<audio controls>
-				<source src="meu_audio.mp3" type="audio/mpeg">
-				Seu navegador não suporta a tag de áudio.
-			</audio>
+			<section>
+				<h2>Exibindo um Documento PDF interno</h2>
+				<object data="relatorio.pdf" type="application/pdf" width="100%" height="500px">
+					<button type="button"><a href="relatorio.pdf">Baixar Relatório</button>
+				</object><br><br>
+			</section>
+			
+			<section>
+				<h2> Inserindo formas gráficas </h2>
+				<canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+				<script>
+					var c = document.getElementById("myCanvas");
+					var ctx = c.getContext("2d");
+					ctx.beginPath();
+					ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+					ctx.stroke();
+				</script><br><br>
+				
+				<h2>Formas Nativas com SVG</h2>
+				<svg width="200" height="200" style="background-color: #f0f0f0;">
+					
+					<!-- Desenhando um círculo vermelho -->
+					<circle cx="100" cy="100" r="50" fill="red"/>
+					
+					<!-- Desenhando um quadrado com borda azul -->
+					<rect x="20" y="20" width="50" height="50" fill="yellow" stroke="blue" stroke-width="3"/>
+				</svg>
+				
+				
+			</section>
 			
 		</article>	
 	</body>
